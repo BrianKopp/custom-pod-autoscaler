@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "A simple library that can be used to scale kubernetes deployments",
   "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "keywords": ["kubernetes", "autoscaling", "autoscaler", "pod", "custom"],
   "scripts": {
     "prebuild": "npm run lint",
     "build": "tsc",
