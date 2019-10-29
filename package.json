@@ -1,0 +1,37 @@
+{
+  "name": "custom-pod-autoscaler",
+  "version": "0.0.1",
+  "description": "A simple library that can be used to scale kubernetes deployments",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "keywords": ["kubernetes", "autoscaling", "autoscaler", "pod", "custom"],
+  "scripts": {
+    "prebuild": "npm run lint",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "lint-fix": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prepare": "npm run build",
+    "test": "mocha './test/**/*.spec.js' --require ts-node/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briankopp/custom-pod-autoscaler.git"
+  },
+  "author": "Brian Kopp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briankopp/custom-pod-autoscaler/issues"
+  },
+  "homepage": "https://github.com/briankopp/custom-pod-autoscaler#readme",
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/node": "^12.7.12",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^0.11.0",
+    "debug": "^4.1.1"
+  }
+}
