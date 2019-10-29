@@ -1,4 +1,4 @@
-const cpaLib = require('../../dist');
+const cpaLib = require('custom-pod-autoscaler');
 const mockEnvSettings = {
     DEPLOYMENT_TO_SCALE: 'busybox',
     DEPLOYMENT_NAMESPACE: 'default',
