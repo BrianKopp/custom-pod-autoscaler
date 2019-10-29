@@ -1,20 +1,15 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "esModuleInterop": true,
-        "target": "es5",
-        "noImplicitAny": true,
-        "declaration": true,
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "outDir": "lib",
-        "baseUrl": "."
-    },
-    "include": [
-        "src/**/*"
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
     ],
-    "exclude": [
-        "node_modules",
-        "test"
-    ]
+    "jsRules": {},
+    "rules": {
+        "trailing-comma": [ false ],
+        "interface-name": [true, "never-prefix"],
+        "no-console": [false, "log", "error"],
+        "quotemark": [true, "single"],
+        "object-literal-sort-keys": [false]
+    },
+    "rulesDirectory": []
 }

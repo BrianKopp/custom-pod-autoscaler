@@ -7,7 +7,7 @@
         "declaration": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "lib",
         "baseUrl": "."
     },
     "include": [
