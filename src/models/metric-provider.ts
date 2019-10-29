@@ -1,4 +1,4 @@
 export interface MetricProvider {
     stop: () => void;
-    getMetric: () => number;
+    getMetric: () => Promise<number>;
 }
